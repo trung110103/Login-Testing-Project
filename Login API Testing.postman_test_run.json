@@ -1,0 +1,392 @@
+{
+	"id": "6c1ed32d-2916-4ef5-8969-7afb7f1257c3",
+	"name": "Login API Testing",
+	"timestamp": "2025-03-24T09:42:02.769Z",
+	"collection_id": "43373368-cbac74d4-41ca-44f9-b8a5-752b09ac36bf",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 20,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-03-24T09:41:58.212Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "b2e489a6-303b-453e-82f1-ee503825ffc6",
+			"name": "Login Test",
+			"url": "https://reqres.in/api/login",
+			"time": 427,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Token is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				427
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Token is returned": true
+				}
+			]
+		},
+		{
+			"id": "ea9cc277-1c00-4395-a7c3-2b25d8c4e746",
+			"name": "Missing Email",
+			"url": "https://reqres.in/api/login",
+			"time": 433,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Error message for missing email": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message for missing email": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				433
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Error message for missing email": true
+				}
+			]
+		},
+		{
+			"id": "04b19a11-77c5-44bb-9486-14b2e43dc2ca",
+			"name": "Missing Password",
+			"url": "https://reqres.in/api/login",
+			"time": 425,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400 for missing password": true,
+				"Error message for missing password": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400 for missing password": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message for missing password": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				425
+			],
+			"allTests": [
+				{
+					"Status code is 400 for missing password": true,
+					"Error message for missing password": true
+				}
+			]
+		},
+		{
+			"id": "2d78227e-5447-4fcd-87b5-741c9900f773",
+			"name": "Login Fail",
+			"url": "https://reqres.in/api/login",
+			"time": 424,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400 for invalid email": true,
+				"Error message for invalid email": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400 for invalid email": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message for invalid email": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				424
+			],
+			"allTests": [
+				{
+					"Status code is 400 for invalid email": true,
+					"Error message for invalid email": true
+				}
+			]
+		},
+		{
+			"id": "f65dfec4-4d30-41fa-b7d4-a02fe4efefe9",
+			"name": "New Request",
+			"url": "https://reqres.in/api/login",
+			"time": 424,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 for wrong password": true,
+				"Token is returned despite wrong password": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 for wrong password": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token is returned despite wrong password": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				424
+			],
+			"allTests": [
+				{
+					"Status code is 200 for wrong password": true,
+					"Token is returned despite wrong password": true
+				}
+			]
+		},
+		{
+			"id": "b151316d-e7b4-4235-9278-089a6049abe6",
+			"name": "Invalid Email Forma",
+			"url": "https://reqres.in/api/login",
+			"time": 431,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400 for invalid email format": true,
+				"Error message for invalid email format": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400 for invalid email format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message for invalid email format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				431
+			],
+			"allTests": [
+				{
+					"Status code is 400 for invalid email format": true,
+					"Error message for invalid email format": true
+				}
+			]
+		},
+		{
+			"id": "1c539893-aaf8-40b1-8223-24043a3b0f0c",
+			"name": "Empty Payload",
+			"url": "https://reqres.in/api/login",
+			"time": 424,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400 for empty payload": true,
+				"Error message for empty payload": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400 for empty payload": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message for empty payload": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				424
+			],
+			"allTests": [
+				{
+					"Status code is 400 for empty payload": true,
+					"Error message for empty payload": true
+				}
+			]
+		},
+		{
+			"id": "547c4c82-08fc-4340-89e7-d06f97262983",
+			"name": "Special Char Email",
+			"url": "https://reqres.in/api/login",
+			"time": 433,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400 for special char in email": true,
+				"Error message for special char in email": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400 for special char in email": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message for special char in email": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				433
+			],
+			"allTests": [
+				{
+					"Status code is 400 for special char in email": true,
+					"Error message for special char in email": true
+				}
+			]
+		},
+		{
+			"id": "b0a8cbbd-42cb-4976-a3cb-3cb3fe6d3ebd",
+			"name": "Invalid JSON",
+			"url": "https://reqres.in/api/login",
+			"time": 428,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400 for invalid JSON": true,
+				"Error message for invalid JSON": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400 for invalid JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message for invalid JSON": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				428
+			],
+			"allTests": [
+				{
+					"Status code is 400 for invalid JSON": true,
+					"Error message for invalid JSON": true
+				}
+			]
+		},
+		{
+			"id": "c3a0e25b-b129-4348-ac68-fe2996519b31",
+			"name": "Long Email",
+			"url": "https://reqres.in/api/login",
+			"time": 428,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400 for long email": true,
+				"Error message for long email": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400 for long email": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message for long email": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				428
+			],
+			"allTests": [
+				{
+					"Status code is 400 for long email": true,
+					"Error message for long email": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4277,
+	"collection": {
+		"requests": [
+			{
+				"id": "b2e489a6-303b-453e-82f1-ee503825ffc6",
+				"method": "POST"
+			},
+			{
+				"id": "ea9cc277-1c00-4395-a7c3-2b25d8c4e746",
+				"method": "POST"
+			},
+			{
+				"id": "04b19a11-77c5-44bb-9486-14b2e43dc2ca",
+				"method": "POST"
+			},
+			{
+				"id": "2d78227e-5447-4fcd-87b5-741c9900f773",
+				"method": "POST"
+			},
+			{
+				"id": "f65dfec4-4d30-41fa-b7d4-a02fe4efefe9",
+				"method": "POST"
+			},
+			{
+				"id": "b151316d-e7b4-4235-9278-089a6049abe6",
+				"method": "POST"
+			},
+			{
+				"id": "1c539893-aaf8-40b1-8223-24043a3b0f0c",
+				"method": "POST"
+			},
+			{
+				"id": "547c4c82-08fc-4340-89e7-d06f97262983",
+				"method": "POST"
+			},
+			{
+				"id": "b0a8cbbd-42cb-4976-a3cb-3cb3fe6d3ebd",
+				"method": "POST"
+			},
+			{
+				"id": "c3a0e25b-b129-4348-ac68-fe2996519b31",
+				"method": "POST"
+			}
+		]
+	}
+}
