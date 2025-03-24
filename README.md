@@ -13,7 +13,7 @@ Em làm dự án này để kiểm thử hệ thống đăng nhập, gồm 2 ph�
 - **Kiểm thử giao diện**:  
   - Test 2 trường hợp: đăng nhập đúng và sai.  
   - Kết quả: Đều Pass, giao diện chạy ổn.  
-  - File: `login_test.py`,'login_fail.py' (script Selenium).  
+  - File: `login_test.py`,login_fail.py (script Selenium).  
 
 ## Hướng dẫn chạy
 - **API**: Import file `Login_API_Testing.json` vào Postman, chạy Collection `Login API Testing`.  
